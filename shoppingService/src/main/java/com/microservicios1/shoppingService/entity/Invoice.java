@@ -1,6 +1,7 @@
 package com.microservicios1.shoppingService.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.microservicios1.shoppingService.model.Customer;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -25,6 +26,9 @@ public class Invoice {
 
     @Column(name = "customer_id")
     private Long customerId;
+
+    @Transient
+    private Customer customer;
 
     @Column(name = "create_at")
     @Temporal(TemporalType.DATE)
