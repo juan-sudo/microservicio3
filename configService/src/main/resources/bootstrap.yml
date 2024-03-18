@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/gabriel9528/microservicios3.git
+          uri: https://github.com/juan-sudo/microservicio3.git
           searchPaths: configData
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
